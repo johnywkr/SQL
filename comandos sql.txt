@@ -1,0 +1,16 @@
+		
+   ----COMANDOS SQL----
+
+    - CREATE SCHEMA -> pode criar um esquema, as tabelas e as exibições contidas e as permissões GRANT, REVOKE ou DENY em qualquer item protegível em uma única instrução.
+
+    - USE ->  O comando use serve para abrir o banco de dados para manipulação no servidor MySQL.
+
+    - CREATE TABLE ->  para criar uma nova tabela inicialmente vazia no banco de dados atual. O comando CREATE TABLE cria automaticamente um tipo de dado que representa o tipo tupla (tipo de estrutura) correspondente a uma linha da tabela. Uma tabela não pode ter: O mesmo nome que qualquer tipo de dado existente.
+
+
+
+
+
+var char : cabe 50 carteres , mais se u colocar 25 ele ajusa  
+
+char : aparece os caracteres que eu pedi

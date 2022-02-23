@@ -1,0 +1,13 @@
+CREATE DATABASE db_myzzy;
+USE  db_myzzy;
+
+CREATE TABLE funcionarios(
+id int  not null auto_increment,
+nome varchar(50) not null,
+cpf char(11) not null,
+telefone varchar(15) not null,
+data_entrada timestamp not null, -- Data e Hora
+data_saida timestamp,
+data_nascimento date not null,-- yyyy-mm-dd
+primary key (id)
+);

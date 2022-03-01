@@ -59,6 +59,23 @@
     			   Age int
 			   );
 
+ 	- AUTO INCREMEN -
+		-> O incremento automático permite que um número único seja gerado automaticamente quando um novo registro é inserido em uma tabela.
+
+		   Muitas vezes este é o campo de chave primária que gostaríamos que fosse criado automaticamente toda vez que um novo registro fosse inserido.
+
+		Sintaxe para MySQL
+		A seguinte instrução SQL define a coluna "Personid" como um campo de chave primária de incremento automático na tabela "Persons":
+
+		CREATE TABLE Persons (
+
+   		   Personid int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+   		   LastName varchar(255) NOT NULL,
+   		   FirstName varchar(255),
+   		   Age int,
+   		   
+		);
+
 
     - INSERT -
 	-> é essencial para inserir dados em uma tabela. Com ele, podemos adicionar um ou mais registros ao mesmo tempo, indicar em quais campos os dados serão inseridos e muito mais.

@@ -21,7 +21,30 @@
 			nome varchar (50) not null,
 			idade int
 			curso varchar (50) not null);
+
 	
+	- PRIMARY KEY - 
+
+		-> restrição identifica exclusivamente cada registro em uma tabela.
+
+		   As chaves primárias devem conter valores UNIQUE e não podem conter valores NULL.
+
+		   Uma tabela pode ter apenas UMA chave primária; e na tabela, essa chave primária pode consistir em uma ou várias colunas (campos).
+
+
+		--- SQL PRIMARY KEY em CREATE TABLE ---
+
+		O SQL a seguir cria um PRIMARY KEY na coluna "ID" quando a tabela "Persons" é criada:
+
+		MySQL:
+
+		CREATE TABLE Persons (
+    		  ID int NOT NULL PRIMARY KEY,
+    		  LastName varchar(255) NOT NULL,
+   		  FirstName varchar(255),
+   		  Age int,
+  		  );
+
 
        - NOT NULL - 
 	   ->impõe que uma coluna não aceite valores NULL, o que significa que você não pode inserir ou atualizar um registro sem adicionar um valor a esse campo.
@@ -35,6 +58,7 @@
     		           FirstName varchar(255) NOT NULL,
     			   Age int
 			   );
+
 
     - INSERT -
 	-> é essencial para inserir dados em uma tabela. Com ele, podemos adicionar um ou mais registros ao mesmo tempo, indicar em quais campos os dados serão inseridos e muito mais.
@@ -59,6 +83,3 @@
 
 
 
-var char : cabe 50 carteres , mais se u colocar 25 ele ajusa  
-
-char : aparece os caracteres que eu pedi

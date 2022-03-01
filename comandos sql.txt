@@ -1,11 +1,59 @@
 		
    ----COMANDOS SQL----
 
-    - CREATE SCHEMA -> pode criar um esquema, as tabelas e as exibições contidas e as permissões GRANT, REVOKE ou DENY em qualquer item protegível em uma única instrução.
+    - CREATE SCHEMA -
+	-> pode criar um esquema, as tabelas e as exibições contidas e as permissões GRANT, REVOKE ou DENY em qualquer item protegível em uma única instrução.
 
-    - USE ->  O comando use serve para abrir o banco de dados para manipulação no servidor MySQL.
+	EXEMPLO_COMANDO: 
+			CREATE SCHEMA meu_esquema;
 
-    - CREATE TABLE ->  para criar uma nova tabela inicialmente vazia no banco de dados atual. O comando CREATE TABLE cria automaticamente um tipo de dado que representa o tipo tupla (tipo de estrutura) correspondente a uma linha da tabela. Uma tabela não pode ter: O mesmo nome que qualquer tipo de dado existente.
+    - USE -
+	->  O comando use serve para abrir o banco de dados para manipulação no servidor MySQL.
+
+
+    - CREATE TABLE -
+	->  para criar uma nova tabela inicialmente vazia no banco de dados atual. O comando CREATE TABLE cria automaticamente um tipo de dado que representa o tipo tupla (tipo de estrutura) correspondente a uma linha da tabela. Uma tabela não pode ter: O mesmo nome que qualquer tipo de dado existente.
+		
+		EXEMPLO_COMANDO:
+
+			create table cliente (
+			id int primary key not null auto_increment,
+			nome varchar (50) not null,
+			idade int
+			curso varchar (50) not null);
+	
+
+       - NOT NULL - 
+	   ->impõe que uma coluna não aceite valores NULL, o que significa que você não pode inserir ou atualizar um registro sem adicionar um valor a esse campo.
+
+		O SQL a seguir garante que as colunas "ID", "LastName" e "FirstName" NÃO aceitarão valores NULL:
+
+		Exemplo
+			CREATE TABLE Persons (
+    			   ID int NOT NULL,
+    			   LastName varchar(255) NOT NULL,
+    		           FirstName varchar(255) NOT NULL,
+    			   Age int
+			   );
+
+    - INSERT -
+	-> é essencial para inserir dados em uma tabela. Com ele, podemos adicionar um ou mais registros ao mesmo tempo, indicar em quais campos os dados serão inseridos e muito mais.
+
+    	- VALUES -
+		-> é utilizado no comando INSERT, os valores são todos convertidos automaticamente para o tipo de dado da coluna de destino correspondente. Quando é utilizado em outros contextos, pode ser necessário especificar o tipo de dado correto.	
+
+
+    - DROP TABLE -
+	-> serve para remover uma tabela existente de um banco de dados. O comando DROP TABLE remove a tabela e todos os dados contidos nela, então deve ser usado com cautela. Uma tabela também pode ter sua estrutura alterada.
+
+    - SELECT -
+	-> é uma declaração SQL que retorna um conjunto de resultados de registros de uma ou mais tabelas. Ela recupera zero ou mais linhas de uma ou mais tabelas-base, tabelas temporárias ou visões em um banco de dados.
+
+    - UPDATE - 
+	-> é o comando SQL responsável por atualizar os dados já armazenados em uma tabela do banco. Ele pode ser usado tanto para atualizar um único registro quanto para alterar múltiplas informações de uma vez.
+
+    - DELETE -
+	-> é usado para deletar os dados de uma ou mais linhas da tabela. É importante ressaltar que esse comando não exclui estruturas do banco, apenas os dados armazenados nele.
 
 
 

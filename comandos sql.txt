@@ -63,7 +63,7 @@
     			   Age int
 			   );
 
-    - AUTO INCREMEN -
+    - AUTO INCREMENT -
     -> O incremento automático permite que um número único seja gerado automaticamente quando um novo registro é inserido em uma tabela.
        Muitas vezes este é o campo de chave primária que gostaríamos que fosse criado automaticamente toda vez que um novo registro fosse inserido.
 

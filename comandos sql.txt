@@ -36,6 +36,7 @@
 
 		O SQL a seguir cria um PRIMARY KEY na coluna "ID" quando a tabela "Persons" é criada:
 
+
 		MySQL:
 
 		CREATE TABLE Persons (
@@ -77,6 +78,11 @@
 		);
 
 
+	- VARCHAR - 
+		-> armazena somente a quantidade de caracteres que foram definidos na usa criação.
+		   Assim se você definir uma coluna da tabela (campo) como VARCHAR(10) e armazenar um caractere ele vai armazenar somente o caractere sem colocar espaços para completar o tamanho definido na criação.
+
+
     - INSERT -
 	-> é essencial para inserir dados em uma tabela. Com ele, podemos adicionar um ou mais registros ao mesmo tempo, indicar em quais campos os dados serão inseridos e muito mais.
 
@@ -90,8 +96,29 @@
     - SELECT -
 	-> é uma declaração SQL que retorna um conjunto de resultados de registros de uma ou mais tabelas. Ela recupera zero ou mais linhas de uma ou mais tabelas-base, tabelas temporárias ou visões em um banco de dados.
 
+	- FROM -
+	  ->  comando é usado para especificar de qual tabela selecionar ou excluir dados.
+		
+	    A seguinte instrução SQL seleciona todas as colunas da tabela "Clientes":
+	    Exemplo
+
+		SELECT * FROM Customers;
+
+
     - UPDATE - 
 	-> é o comando SQL responsável por atualizar os dados já armazenados em uma tabela do banco. Ele pode ser usado tanto para atualizar um único registro quanto para alterar múltiplas informações de uma vez.
+
+	SET - 
+	 -> comando é usado com UPDATE para especificar quais colunas e valores devem ser atualizados em uma tabela.
+
+	EXEMPLO
+		O SQL a seguir atualiza o primeiro cliente (CustomerID = 1) com um novo ContactName e uma nova cidade:
+
+	Exemplo
+	  UPDATE Customers
+	  SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+	  WHERE CustomerID = 1;
+
 
     - DELETE -
 	-> é usado para deletar os dados de uma ou mais linhas da tabela. É importante ressaltar que esse comando não exclui estruturas do banco, apenas os dados armazenados nele.

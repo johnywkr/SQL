@@ -2,17 +2,17 @@
    ----COMANDOS SQL----
 
     - CREATE SCHEMA -
-	-> pode criar um esquema, as tabelas e as exibições contidas e as permissões GRANT, REVOKE ou DENY em qualquer item protegível em uma única instrução.
+    -> pode criar um esquema, as tabelas e as exibições contidas e as permissões GRANT, REVOKE ou DENY em qualquer item protegível em uma única instrução.
 
 	EXEMPLO_COMANDO: 
 			CREATE SCHEMA meu_esquema;
 
     - USE -
-	->  O comando use serve para abrir o banco de dados para manipulação no servidor MySQL.
+    ->  O comando use serve para abrir o banco de dados para manipulação no servidor MySQL.
 
 
     - CREATE TABLE -
-	->  para criar uma nova tabela inicialmente vazia no banco de dados atual. O comando CREATE TABLE cria automaticamente um tipo de dado que representa o tipo tupla (tipo de estrutura) correspondente a uma linha da tabela. Uma tabela não pode ter: O mesmo nome que qualquer tipo de dado existente.
+    ->  para criar uma nova tabela inicialmente vazia no banco de dados atual. O comando CREATE TABLE cria automaticamente um tipo de dado que representa o tipo tupla (tipo de estrutura) correspondente a uma linha da tabela. Uma tabela não pode ter: O mesmo nome que qualquer tipo de dado existente.
 		
 		EXEMPLO_COMANDO:
 
@@ -50,8 +50,8 @@
   		  );
 
 
-       - NOT NULL - 
-	   ->impõe que uma coluna não aceite valores NULL, o que significa que você não pode inserir ou atualizar um registro sem adicionar um valor a esse campo.
+     - NOT NULL - 
+     ->impõe que uma coluna não aceite valores NULL, o que significa que você não pode inserir ou atualizar um registro sem adicionar um valor a esse campo.
 
 		O SQL a seguir garante que as colunas "ID", "LastName" e "FirstName" NÃO aceitarão valores NULL:
 
@@ -63,10 +63,9 @@
     			   Age int
 			   );
 
- 	- AUTO INCREMEN -
-		-> O incremento automático permite que um número único seja gerado automaticamente quando um novo registro é inserido em uma tabela.
-
-		   Muitas vezes este é o campo de chave primária que gostaríamos que fosse criado automaticamente toda vez que um novo registro fosse inserido.
+    - AUTO INCREMEN -
+    -> O incremento automático permite que um número único seja gerado automaticamente quando um novo registro é inserido em uma tabela.
+       Muitas vezes este é o campo de chave primária que gostaríamos que fosse criado automaticamente toda vez que um novo registro fosse inserido.
 
 		Sintaxe para MySQL
 		A seguinte instrução SQL define a coluna "Personid" como um campo de chave primária de incremento automático na tabela "Persons":
@@ -81,26 +80,29 @@
 		);
 
 
-	- VARCHAR - 
-		-> armazena somente a quantidade de caracteres que foram definidos na usa criação.
-		   Assim se você definir uma coluna da tabela (campo) como VARCHAR(10) e armazenar um caractere ele vai armazenar somente o caractere sem colocar espaços para completar o tamanho definido na criação.
+    - VARCHAR - 
+    -> Armazena somente a quantidade de caracteres que foram definidos na usa criação.
+       Assim se você definir uma coluna da tabela (campo) como VARCHAR(10) e armazenar um caractere ele vai armazenar somente o caractere sem colocar espaços para completar o tamanho definido na criação.
 
 
     - INSERT -
-	-> é essencial para inserir dados em uma tabela. Com ele, podemos adicionar um ou mais registros ao mesmo tempo, indicar em quais campos os dados serão inseridos e muito mais.
+    -> é essencial para inserir dados em uma tabela. Com ele, podemos adicionar um ou mais registros ao mesmo tempo, indicar em quais campos os dados serão inseridos e muito mais.
 
-    	- VALUES -
-		-> é utilizado no comando INSERT, os valores são todos convertidos automaticamente para o tipo de dado da coluna de destino correspondente. Quando é utilizado em outros contextos, pode ser necessário especificar o tipo de dado correto.	
+
+    - VALUES -
+    -> é utilizado no comando INSERT, os valores são todos convertidos automaticamente para o tipo de dado da coluna de destino correspondente. Quando é utilizado em outros contextos, pode ser necessário especificar o tipo de dado correto.	
 
 
     - DROP TABLE -
-	-> serve para remover uma tabela existente de um banco de dados. O comando DROP TABLE remove a tabela e todos os dados contidos nela, então deve ser usado com cautela. Uma tabela também pode ter sua estrutura alterada.
+    -> serve para remover uma tabela existente de um banco de dados. O comando DROP TABLE remove a tabela e todos os dados contidos nela, então deve ser usado com cautela. Uma tabela também pode ter sua estrutura alterada.
+ 
 
     - SELECT -
-	-> é uma declaração SQL que retorna um conjunto de resultados de registros de uma ou mais tabelas. Ela recupera zero ou mais linhas de uma ou mais tabelas-base, tabelas temporárias ou visões em um banco de dados.
+    -> é uma declaração SQL que retorna um conjunto de resultados de registros de uma ou mais tabelas. Ela recupera zero ou mais linhas de uma ou mais tabelas-base, tabelas temporárias ou visões em um banco de dados.
 
-	- FROM -
-	  ->  comando é usado para especificar de qual tabela selecionar ou excluir dados.
+
+    - FROM -
+    ->  comando é usado para especificar de qual tabela selecionar ou excluir dados.
 		
 	    A seguinte instrução SQL seleciona todas as colunas da tabela "Clientes":
 	    Exemplo
@@ -109,13 +111,14 @@
 
 
     - UPDATE - 
-	-> é o comando SQL responsável por atualizar os dados já armazenados em uma tabela do banco. Ele pode ser usado tanto para atualizar um único registro quanto para alterar múltiplas informações de uma vez.
+    -> é o comando SQL responsável por atualizar os dados já armazenados em uma tabela do banco. Ele pode ser usado tanto para atualizar um único registro quanto para alterar múltiplas informações de uma vez.
 
-	SET - 
-	 -> comando é usado com UPDATE para especificar quais colunas e valores devem ser atualizados em uma tabela.
 
-	EXEMPLO
-		O SQL a seguir atualiza o primeiro cliente (CustomerID = 1) com um novo ContactName e uma nova cidade:
+    = SET = 
+    -> comando é usado com UPDATE para especificar quais colunas e valores devem ser atualizados em uma tabela.
+
+        EXEMPLO
+	O SQL a seguir atualiza o primeiro cliente (CustomerID = 1) com um novo ContactName e uma nova cidade:
 
 		Exemplo
 	 	    UPDATE Customers
@@ -124,9 +127,17 @@
 
 
     - DELETE -
-	-> é usado para deletar os dados de uma ou mais linhas da tabela. É importante ressaltar que esse comando não exclui estruturas do banco, apenas os dados armazenados nele.
+    -> é usado para deletar os dados de uma ou mais linhas da tabela. É importante ressaltar que esse comando não exclui estruturas do banco, apenas os dados armazenados nele.
 
 
+
+    - WHERE -
+     -->A cláusula é usada para filtrar registros.
+ 	Ele é usado para extrair apenas os registros que atendem a uma condição especificada.
+	
+
+	EXEMPLO
+	=> update cliente set nome= "mateus" where id=2; : " O where nesse exemplo está indicando aonde vai ser alterado o nome , no caso o id=2; "
 
 
 

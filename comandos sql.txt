@@ -22,6 +22,9 @@
 			idade int
 			curso varchar (50) not null);
 
+	- INT -
+	   -> Int indica um campo que receberá números inteiros.
+
 	
 	- PRIMARY KEY - 
 
@@ -114,10 +117,10 @@
 	EXEMPLO
 		O SQL a seguir atualiza o primeiro cliente (CustomerID = 1) com um novo ContactName e uma nova cidade:
 
-	Exemplo
-	  UPDATE Customers
-	  SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
-	  WHERE CustomerID = 1;
+		Exemplo
+	 	    UPDATE Customers
+	 	    SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+	 	    WHERE CustomerID = 1;
 
 
     - DELETE -

@@ -1,0 +1,12 @@
+
+
+
+   1º CRIAR UM CRUD COM SQL
+
+   2º FAZER A INTEGRAÇÃO DO BANCO DE DADOS COM FORMULARIO PHP!
+
+   3º PESQUISAR SOBRE COMANDOS "COMMIT" E "ROLLBACK"
+
+   4º POSSIBILITAR A EDIÇÃO DE UM USUARIO EXISTENTE.
+     - Criar uma lista de usuarios.
+     - Cada usuario tera um botao para edição e para exclusao.

@@ -141,3 +141,6 @@
 
 
 
+
+   - Safe update rejected update and delete mode
+     É um modo de segurança do sql workbench, você pode desativalo nas configuraçoes indo em edit, preferencias , editor sql ou usar o comando SET SQL_SAFE_UPDATES = 0; 

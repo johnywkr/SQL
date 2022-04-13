@@ -21,14 +21,16 @@
 			nome varchar (50) not null,
 			idade int
 			curso varchar (50) not null);
+       
 
-	- INT -
-	   -> Int indica um campo que receberá números inteiros.
+       TIPOS PRIMITIVOS
+	 
+		- INT -
+		-> Int indica um campo que receberá números inteiros.
 
 	
-	- PRIMARY KEY - 
-
-		-> restrição identifica exclusivamente cada registro em uma tabela.
+		- PRIMARY KEY - 
+		 -> Restrição identifica exclusivamente cada registro em uma tabela.
 
 		   As chaves primárias devem conter valores UNIQUE e não podem conter valores NULL.
 
@@ -50,8 +52,8 @@
   		  );
 
 
-     - NOT NULL - 
-     ->impõe que uma coluna não aceite valores NULL, o que significa que você não pode inserir ou atualizar um registro sem adicionar um valor a esse campo.
+   	    - NOT NULL - 
+   	    ->impõe que uma coluna não aceite valores NULL, o que significa que você não pode inserir ou atualizar um registro sem adicionar um valor a esse campo.
 
 		O SQL a seguir garante que as colunas "ID", "LastName" e "FirstName" NÃO aceitarão valores NULL:
 
@@ -63,9 +65,10 @@
     			   Age int
 			   );
 
-    - AUTO INCREMENT -
-    -> O incremento automático permite que um número único seja gerado automaticamente quando um novo registro é inserido em uma tabela.
-       Muitas vezes este é o campo de chave primária que gostaríamos que fosse criado automaticamente toda vez que um novo registro fosse inserido.
+
+ 	     - AUTO INCREMENT -
+   	     -> O incremento automático permite que um número único seja gerado automaticamente quando um novo registro é inserido em uma tabela.
+       	        Muitas vezes este é o campo de chave primária que gostaríamos que fosse criado automaticamente toda vez que um novo registro fosse inserido.
 
 		Sintaxe para MySQL
 		A seguinte instrução SQL define a coluna "Personid" como um campo de chave primária de incremento automático na tabela "Persons":
@@ -80,9 +83,12 @@
 		);
 
 
-    - VARCHAR - 
-    -> Armazena somente a quantidade de caracteres que foram definidos na usa criação.
-       Assim se você definir uma coluna da tabela (campo) como VARCHAR(10) e armazenar um caractere ele vai armazenar somente o caractere sem colocar espaços para completar o tamanho definido na criação.
+   	     - VARCHAR - 
+
+    	     -> Armazena somente a quantidade de caracteres que foram definidos na usa criação.
+     	       Assim se você definir uma coluna da tabela (campo) como VARCHAR(10) e armazenar um caractere ele vai armazenar somente o caractere sem colocar espaços para completar o tamanho definido na criação.
+
+
 
 
     - INSERT -
